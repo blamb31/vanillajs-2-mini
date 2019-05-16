@@ -17,8 +17,12 @@ function addTodo(e) {
 }
 
 function removeTodo (e) {
+
     e.target.parentNode.remove()
-    console.log("Removed")
+
+    e.stopPropagation()
+
+
 }
 
 function completeTodo(event) {
